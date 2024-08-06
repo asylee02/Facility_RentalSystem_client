@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Main = () => {
-  return <div>메인 화면</div>;
+  return <div className="h-screen">메인화면</div>;
 };
 
 export default Main;
