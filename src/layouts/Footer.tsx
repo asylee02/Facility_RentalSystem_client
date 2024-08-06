@@ -1,3 +1,5 @@
+import { IoLocationOutline } from 'react-icons/io5';
+
 const Footer = () => {
   return (
     <div className="w-full bg-[#262626] text-white">
@@ -25,9 +27,15 @@ const Footer = () => {
           <p>법인산하기관</p>
         </div>
       </div>
-      <div className="h-[115px] w-full border-t-[1px] border-white text-[#C1C0C0] text-[20px] flex flex-col justify-center pl-20">
-        <p>명지대학교 인문캠퍼스: (03674) 서울특별시 서대문구 거불골로 34 (TEL: 1577-0020)</p>
-        <p>명지대학교 자연캠퍼스: (17058) 경기도 용인시 처인구 명지로 116 (TEL: 1577-0020)</p>
+      <div className="h-[115px] w-full border-t-[1px] border-white text-[#C1C0C0] flex flex-col justify-center pl-20">
+        <div className="flex items-center mb-2">
+          <IoLocationOutline className="text-2xl" />
+          <p>명지대학교 인문캠퍼스: (03674) 서울특별시 서대문구 거불골로 34 (TEL: 1577-0020)</p>
+        </div>
+        <div className="flex items-center">
+          <IoLocationOutline className="text-2xl" />
+          <p>명지대학교 자연캠퍼스: (17058) 경기도 용인시 처인구 명지로 116 (TEL: 1577-0020)</p>
+        </div>
       </div>
     </div>
   );
