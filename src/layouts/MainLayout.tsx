@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const mainLayout = () => {
   return (
-    <div className="bg-main">
+    <div className="bg-main overflow-x-hidden">
       <Header />
       <Outlet />
       <Footer />
