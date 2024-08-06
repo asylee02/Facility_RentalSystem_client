@@ -8,7 +8,7 @@ const Header = () => {
       <div className="h-[101px] bg-[#002E66] w-full flex items-center px-12 drop-shadow-lg">
         <img src="/images/mjuLogo.png" alt="logo" className="h-[54px]" />
       </div>
-      <div className="h-[32px] w-full shadow-2xl bg-white flex items-center justify-end pr-20">
+      <div className="h-[32px] w-full  bg-white flex items-center justify-end pr-20 shadow-md">
         <FaRegUserCircle className="text-2xl mr-3" />
         <Link to="signin">로그인</Link>
         <p className="mx-3">|</p>
