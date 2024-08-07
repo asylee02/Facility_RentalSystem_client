@@ -16,6 +16,7 @@ const SignUp = () => {
   const { handleSubmit, register } = useForm<FormValues>();
   const [emailButton, setEmailButton] = useState<Boolean>(false);
   const handleEmail = () => {};
+  var je = ' ';
 
   const Submit: SubmitHandler<FormValues> = (data) => {
     console.log(data);
