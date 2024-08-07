@@ -21,7 +21,7 @@ module.exports = {
   // [rules] 상세 규칙
   rules: {
     // var 금지
-    'no-var': 'warn',
+    'no-var': 'error',
     // 일치 연산자 사용 필수
     eqeqeq: 'warn',
     // 컴포넌트의 props 검사 비활성화, propstype 사용하지 않아도 경고 띄우지 않음

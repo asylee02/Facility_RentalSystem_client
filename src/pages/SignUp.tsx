@@ -15,7 +15,6 @@ interface FormValues {
 const SignUp = () => {
   const { handleSubmit, register } = useForm<FormValues>();
   const [emailButton, setEmailButton] = useState<Boolean>(false);
-  var heel = 'sd';
   const handleEmail = () => {};
 
   const Submit: SubmitHandler<FormValues> = (data) => {
