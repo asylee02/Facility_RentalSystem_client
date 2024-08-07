@@ -1,23 +1,18 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { UseFormRegister, useForm } from 'react-hook-form';
 
 interface Props {
   type: string;
   placeholder: string;
   name: string;
   title: string;
+  register: UseFormRegister<any>;
 }
 
-const SingUp_Input = ({ type, placeholder, name, title }: Props) => {
-  const {
-    register,
-    watch,
-    formState: { errors },
-  } = useForm();
-
+const SingUp_Input = ({ type, placeholder, name, title, register }: Props) => {
   return (
     <div>
-      <div className="flex">
+      <div className="flex w-full">
         <p className="text-red-500 mr-1">*</p>
         <p className="">{title}</p>
       </div>
