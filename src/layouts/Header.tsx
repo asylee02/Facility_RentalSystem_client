@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <div className="w-screen">
       <div className="h-[101px] bg-[#002E66] w-full flex items-center px-12 drop-shadow-lg">
-        <img src="/images/mjuLogo.png" alt="logo" className="h-[54px]" />
+        <Link to={'/'}>
+          <img src="/images/mjuLogo.png" alt="logo" className="h-[54px]" />
+        </Link>
       </div>
       <div className="h-[32px] w-full  bg-white flex items-center justify-end pr-20 shadow-md text-[14px]">
         <FaRegUserCircle className="text-2xl mr-3" />

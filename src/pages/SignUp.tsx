@@ -13,11 +13,14 @@ interface FormValues {
 }
 
 const SignUp = () => {
-  const { handleSubmit, register } = useForm<FormValues>();
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<FormValues>();
   const [emailButton, setEmailButton] = useState<Boolean>(false);
   const handleEmail = () => {};
-  var je = ' ';
-
+  var hello = '';
   const Submit: SubmitHandler<FormValues> = (data) => {
     console.log(data);
   };
@@ -26,7 +29,15 @@ const SignUp = () => {
       <p className="text-[28px] font-bold mt-20 mb-10">회원가입</p>
       <div className=" bg-white mb-20">
         <form onSubmit={handleSubmit(Submit)} className="flex max-w-[520px] flex-col items-center px-12 py-10">
-          <SingUp_Input register={register} type="text" placeholder="이름을 입력하세요" name="name" title="이름" />
+          <SingUp_Input
+            register={register}
+            type="text"
+            placeholder="이름을 입력하세요"
+            name="name"
+            title="이름"
+            error={errors}
+            min={2}
+          />
           <div>
             <div className="flex w-full">
               <p className="text-red-500 mr-1">*</p>
@@ -55,6 +66,7 @@ const SignUp = () => {
             placeholder="비밀번호를 입력하세요"
             name="password"
             title="비밀번호"
+            min={10}
           />
           <SingUp_Input
             register={register}
@@ -70,7 +82,7 @@ const SignUp = () => {
             name="student_id"
             title="학번"
           />
-          <SingUp_Input register={register} type="text" placeholder="학과를 입력하세요" name="학과" title="학과" />
+          <SingUp_Input register={register} type="text" placeholder="학과를 입력하세요" name="major" title="학과" />
           <SingUp_Input register={register} type="number" placeholder="학년을 입력해주세요" name="grade" title="학년" />
           <SingUp_Input
             register={register}

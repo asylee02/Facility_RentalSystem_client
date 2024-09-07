@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const mainLayout = () => {
   return (
-    <div className="bg-main overflow-x-hidden">
+    <div className="h-screen w-full bg-main overflow-x-hidden min-h-screen flex flex-col justify-between">
       <Header />
       <Outlet />
       <Footer />
