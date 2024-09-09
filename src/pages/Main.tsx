@@ -1,5 +1,5 @@
-import NavBar from '../components/main/NavBar';
-import Reservation from '../components/main/Reservation';
+import NavBar from '../features/main/NavBar';
+import Reservation from '../features/main/Reservation';
 
 const Main = () => {
   return (
@@ -10,6 +10,7 @@ const Main = () => {
       <div className="w-2/3">
         <p className="text-2xl mt-[41px] mb-[15px]">대여 가능한 공간</p>
         <div className="w-full grid grid-cols-3 gap-[40px] mb-[170px]">
+          <Reservation />
           <Reservation />
           <Reservation />
           <Reservation />
